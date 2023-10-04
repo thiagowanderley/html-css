@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VIDEOS</title>
+</head>
+<body>
+    <h1>Adicionando Videos no Nosso site</h1>
+    <p>
+        É muito facil adicionar videos em nosso site, precisamos usar apenas a tag &lt;video&gt; e utilizar os mesmos mecanismos para adicionar uma imagem
+    </p>
+    <p>
+        Apesar de ser algo pratico, adicionar videos em nosso site tem suas resalvas. Precisamos estar atentos aos formatos de video. Por isso é interessante adicionarmos o mesmo video em varios formatos, que são eles:
+        <strong>
+            <ul>
+                <li>mp4
+                <li>webm</li>
+                <li>Ogg</li>
+            </ul>
+        </strong>
+        Para isso vamos adicionar parametros dentro do nosso codigo chamado <code>source src</code>, ficando da seguinte forma:
+        <pre>
+            <code>
+                &lt;video width="450px" controls>
+                    &lt;source src="Videos/meuvideo.mp4" type="video/mp4">
+                    &lt;source src="Videos/meuvideo.webm" type="video/webm">
+                    &lt;source src="Videos/meuvideo.ogv" type="video/ogg">
+                &lt;/video>
+            </code>
+        </pre>
+    </p>
+    <p>
+        Dentro da primeira tag "video" podemos observar que foi adicionado os parametros <code>width="450px"</code> e o parametro <code>controls</code> que servem para:
+        <dl>
+            <dt>WIDTH</dt>
+            <dd>Informar o tamanho do video, no que se refere a tamanho de tela</dd>
+            <dt>CONTROLS</dt>
+            <dd>Permite colocarmos controles em nosso video, como: aumentar e baixar volume, dar play/pause </dd>
+        </dl>
+        Alem desses parametros, podemos adicionar tambem o parametro <code>poster</code> que serve para adicionarmos uma imagem de capa ao nosso video
+    </p>
+    <p>
+        <video width="450px" controls>
+        <source src="Videos/meuvideo.mp4" type="video/mp4">
+        <source src="Videos/meuvideo.webm" type="video/webm">
+        <source src="Videos/meuvideo.ogv" type="video/ogg">
+        </video>
+    </p>
+</body>
+</html>

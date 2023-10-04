@@ -1,0 +1,29 @@
+@charset "UTF-8";
+@font-face {
+    font-family:'nabla' ;
+    src: url(Fonte/Nabla-Regular-VariableFont_EDPT\,EHLT.ttf);
+}
+@font-face {
+    font-family:'dosis' ;
+    src: url(Fonte/Dosis-VariableFont_wght.ttf);
+}
+body{
+    background-image: linear-gradient(90deg, #8585fd, #ffff66);
+    width: 100%;
+    height: 100%;
+    
+}
+/* seletor ID = # */
+#principal{
+    text-align: center;
+    font-family: 'nabla';
+}
+.subtitulo{
+    color: rgb(179, 97, 29);
+    font-family: 'dosis';
+}
+p{
+    font-family: 'dosis', sans-serif;
+    font-weight: normal;
+    font-size: 1em;
+}

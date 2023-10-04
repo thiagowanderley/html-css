@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo Elemento</title>
+    <style>
+        /*
+        * = id
+        . = class
+        : = pseudo-class
+        :: = pseudo-element
+        > = children
+        */
+        body{
+            font-family: sans-serif;
+        }
+        li{
+            margin-bottom: 5px;
+        }
+        a{
+            color: coral;
+            text-decoration: none;
+            
+        }
+        a:visited{
+            /*
+            atribui alguma caracteristica apos visitar o link "elemento" em questão
+            */
+            color: darkgreen;
+        }
+        a:hover{
+            /*
+            atribui alguma caracteristica apos passar o mouse sobre esse elemento
+            */
+            color: #0080ff;
+            text-decoration: underline;
+        }
+        a::after{
+            /*
+            Pseudo elemento representado por "::" avisando que apos (after) o elemento em questão vai ter um texto cpm o conteudo "(link)"
+            */
+            content: '(link)';
+            color: grey;
+            text-decoration: none;
+            margin: 2px;
+        }
+
+    </style>
+</head>
+<body>
+<ul>
+    <li><a href="#">Site da Mitsubishi oficial</a></li>
+    <li><a href="#">Site da Mitsubishi Sakai</a></li>
+</ul>
+</body>
+</html>

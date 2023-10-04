@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IMAGENS DINAMICAS</title>
+    <style>
+        body{
+            background-color: black;
+        }
+        h1{
+            color: white;
+        }
+        p{
+            color: white;
+        }
+        code{
+            color: white;
+        }
+    </style>
+</head>
+<body>|
+    <h1>Imagens Dinamicas</h1>
+    <p>Regida pela tag &lt;picture&gt;, a função de imagem flexivel serve para adaptar o tamanho da imagem de acordo com o tamanho da tela de onde está sendo vista. É importante resaltar que a base sempre começa com a maior imagem e é regida pela tag &lt;img&gt; e as imagens em seguida são representadas pela tag &lt;source:media:type&gt; e vai ficar da seguinte forma:</p>
+    <p>
+        <pre>
+            <code>
+                &lt;picture&gt;
+                    &lt;source media="(<mark>max</mark>-width:550px )" srcset="<abbr title="Nome exato do arquivo de imagem">imagens/foto-p.png</abbr>" type="image/png"&gt;
+                    &lt;source media="(<mark>max</mark>-width:850px )" srcset="imagens/foto-m.png" type="image/png"&gt;
+                    &lt;img src="imagens/foto-g.png" alt="imagem flexivel"&gt; 
+                &lt;/picture&gt;
+            </code>
+        </pre>
+    </p>
+    <p>Note que a ultima linha, que é a base do nosso programa e consequentemente é onde vai ficar a maior imagem começa com a tag &lt;img&gt;</p>]
+    <p><strong>OBS:</strong>Sempre tente salvar suas imagens em formato PNG</p>
+
+   <picture>
+    <source media="(max-width:550px )" srcset="imagens/foto-p.png" type="image/png">
+    <source media="(max-width:850px )" srcset="imagens/foto-m.png" type="image/png">
+    <img src="imagens/foto-g.png" alt="imagem flexivel"><!--A base sempre começa com a tag <img>, e é a maior imagem-->
+   </picture>
+       
+    
+</body>
+</html>

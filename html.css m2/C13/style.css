@@ -1,0 +1,22 @@
+
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+body{
+    background-image: linear-gradient(90deg, #CBF3F0, #2EC4B6); /*degradê de imagens*/
+}
+div{
+    background-color: rgb(255, 255, 255);
+    margin: auto;/*centralizador de texto automatico*/
+    width: 500px; /*tamanho da LARGURA onde está o conteudo da div*/
+    padding: 20px; /*tamanho da margem / acochoamento*/
+    border-radius: 20px; /*curvatura das pontas*/
+    box-shadow: 3px 3px 3px #1a7067; /*confirguração de sombra*/
+    text-align: center;
+    height: auto;
+    
+}
+p{
+    text-align: justify;
+}

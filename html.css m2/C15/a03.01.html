@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Houver</title>
+    <style>
+       div:hover{
+        color: red;
+       }
+       div > #oculto{
+        display: none;
+       }
+       div:hover > #oculto{
+        display: block;
+        color: red
+       }
+    </style>
+</head>
+<body>
+    <h1 style="font-weight: lighter;">EXERCICIO TESTE</h1>
+    <p>Passe o mouse no texto abaixo</p>
+    <div>
+        <p id="mouse">Passe o mouse aqui</p>
+        <p id="oculto">TEXTO OCULTO</p>
+    </div>
+</body>
+</html>

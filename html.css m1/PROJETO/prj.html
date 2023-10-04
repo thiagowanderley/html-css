@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="fav-desenho.ico" type="image/x-icon">
+    <title>MODULO 1</title>
+    <style>
+        body{
+            background-color: rgb(230, 232, 214);
+        }
+        h1{
+            font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+        p{
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+        }
+        h2{
+            font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+        }
+        h3{
+            font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+        }
+        hr{
+            color: rgb(137, 28, 28);
+        }
+
+    </style>
+</head>
+<body>
+    <h1>MODULO 1</h1>
+    <h2>PARAGRAFOS E QUEBRAS DE LINHA</h2>
+    <p>Se por acaso for necessário quebrer uma linha no meio de um paragrafo, utilizamos a tag &lt;br&gt;,como exemplo dessa proxima palavra que vai aparecer na linha de baixo: <br> <strong>Olá :D</strong>. <br> Logo apos a palavra "baixo" no primeiro paragrafo, eu utilizei a tag &lt;br&gt; </p> <!--ola-->
+    <hr>
+    <h2>EMOJIS E SIMBOLOS</h2>
+    <p>Dando continuidade a aula 01, agora vamos reproduzir alguns simbolos bem comuns no dia a dia. São esses alguns exemplos: <br> &reg; &copy; &euro; &pound; &cent; &Delta; <br> Lembrando que esse e outros simbolos estão disponiveis no conteudo em PDF do professor Guanabara </p>
+    <h3>Emojis</h3>
+    <p>Para adicionar emojis vamos ultilizar a ferramenta de um website. Vai ser necessário entrar no seu navegador e procurar pelo site "emojipedia", procurar pelo emoji desejado e identificar seu "ponto de código", apos isso vamos colocar seu codigo depois do comando &#x. Como exemplo desse foguete que irei adicionar agora: <br> &#x1F680 </p>
+    <hr>
+    <h2>FOTOS E IMAGENS</h2>
+    <p>Nessa parte do curso foi ensinado como se colocar uma imagem em nosso site. Para simplificar esse processo, irei resumir esse capitulo em alguns passos.</p>
+    <h3>1° PASSO: Procurar a imagem correta</h3>
+        <p>A principio, nos precisamos antes de tudo ter alguma imagem, para isso nos precisamos de imagens que tenham seus direitos autorais liberados para ser usadas com cunho comercial. O <strong>Google</strong> é uma exelente alternativa, já que o mesmo nos fornece filtros que podemos colocar em nossas pesquisas para obter essas fotos</p>
+    <h3>2° PASSO: Baixar o programa GIMP</h3>
+    <p>Agora que já temos a foto, nos precisamos fazer umas edições basicas nela. Não vai ser preciso mexer em nada relacionado a seu design, ou algo do tipo. Essa edição na verdade vai ser para deixar a nossa imagem em dimensões ideais para o nosso site,  contribuindo não só para uma vizualização mais limpa, como tambem para reduzir o "peso" da nossa imagem. tornando assim o nosso site mais leve </p>
+    <h3>3° PASSO: Colocar a foto no site</h3>
+    <p>Agora vem a parte mais importante. Após fazer todas as alterações em nossa foto, vamos colocar ela em nosso site. Primeiro, pra facilitar a nossa vida, precisamos baixar essa foto na mesma pasta que está o programa que vai recebe-la. Feito isso, é so abrir o programa e dar o comando "img", apos isso vamos utilizar as teclas Ctrl + Espaço, e então o arquivo da nossa foto estara la e é so seleciona-la. Para dar um exemplo, irei adicionar duas imagens em nosso site <br> <img src="html5-136.png" alt="HTML5"> <img src="css3-136.png" alt="CSS3"></p>
+    <hr>
+    <h2>FAVICON</h2>
+    <p>Agora vamos adicionar um FavIcon em nosso Site <br> Uma observação importante sobre a adição de um icone em nosso site é o local em que devemos dar o comando. que é na região "head" do nosso site, com o comando "link:favicon" e em seguida dar o comando "Ctrl + espaço" <br> <strong>OBS:</strong> É importante lembrar que assim como para adicionar uma imagem em nosso site, para adicionar um icone tambem precisamos adicionar o arquivo ICO na mesma pasta onde está aqrquivado o nosso projeto.</p>
+    <hr>
+    <h2>TAGS E FORMATAÇÕES</h2>
+    <h3><strong>NEGRITO</strong></h3>
+    <p>Um texto em negrito com a tag "B", é diferente de um texto em negrito com a tag "STRONG" <br> Ex: <strong>Esse texto está em negrito com a tag "strong"</strong> <br><b>Esse texto está em negrito com a tag "B"</b> </p><p>Visivelmente não tem diferença nenhuma em sua forma. Porem, para alguns sites, a forma mais atualizada (strong) é mais aceita</p>
+    <h3><em>ITALICO</em></h3>
+    <p>Um texto em italico com a tag "i", é diferente de um texto em italico com a tag "em" <br> Ex: <i>Esse texto está em italico com a tag "I"</i><br> <em>Esse texto está em italico com a tag "EM"</em> </p> <p></p>Visivelmente não tem diferença nenhuma em sua forma. Porem, para alguns sites, a forma mais atualizada (em) é mais aceita</p>
+    <h3><mark>TEXTO MARCADO/MARCA TEXTO</mark></h3>
+    <p>Para utilizar o texto marcado nos utilizamos a tag "mark", e podemos mudar a cor do nosso marcador abrindo a tag "style" dentro da tag mark e mudamos o seu background-color. como exemplo esse texto que vai sair marcado em azul: <br> Ex: <mark style="background-color: aqua;"> esse texto está em azul claro</mark></p>
+    <h3><small>TEXTO PEQUENO</small></h3>
+    <p>Muito utilizado para apresentar uma observação importante nas entrelinhas, o texto pequeno é representado pela tag "small". <br> Ex: <small>esse texto está pequeno</small></p>
+    <p><strong>OBS:</strong>Ao contrario do texto pequeno, a tag para representar um texto grande está em desuso. Por isso ela está se tornando obsoleta</p>
+    <h3><del>TEXTO DELETADO</del></h3>
+    <p>Muito utilizado para representar um texto excluido.Ou seja: deve ser lido, porém desconsiderado, é representado pela tag "del". <br> Ex: <del>não considere esse texto</del> </p>
+    <h3><ins>TEXTO INSERIDO</ins></h3>
+    <p>Uma alternativa muito usada para dar enfase a alguma parte do texto, o "texto inserido" é muito utilizado e pode ser representado pela tag "ins". <br>Ex: <ins>Dê atenção a esse texto</ins></p>
+    <p><strong>OBS:</strong>O "texto inserido" tambem pode ser representado pela tag "u", que na verdade faz a mesma função estetica do texto inserido, porem sua função nada mais do que <u>sublinhar</u> o texto (não semantica)</p>
+    <h3>TEXTO <sup>SOBRESCRITO</sup> E TEXTO <sub>SUBSCRITO</sub></h3>
+    <p>Muito utilizado em formulas matematicas, ou formulas quimicas, esses dois tipos de textos podem ser representados pelas tags: <br> "sup" - Texto sobrescrito. Ex: x<sup><mark>2</mark></sup>+ 3 = y<br> "sub" - Texto subscrito. Ex: O<sub><mark>2</mark></sub> / H<sub><mark>2</mark></sub>O </p>
+    <hr>
+    <h2>OUTRAS FORMATAÇÕES</h2>
+    <h3><code>TEXTO EM FORMATO DE CODIGOS</code></h3>
+    <p>De forma direta, essa tag nada mais faz do que deixar o espaçamento entre as letras de forma convergente. É muito utilizados pra expressar codigos. Como ex: <br><code>var a = 2 <br> var b = 5 <br> var x = b*a <br> var x = 10</code> </p>
+    <h3>TAG &lt;PRE&gt;</h3>
+    <p>Ultilizado para replicar exatamente o que foi colocado dentro dele, contando com espaçamento, qubras de linha (enter), é muito utilizado dentro da tag "code", para expressar formulas sem ter que ficar utilizando quebras de linha. Como ex: 
+        <code>
+            <pre>
+        &lt;code&gt;
+            &lt;pre&gt;        
+        5 + 3 * (4-2) = x 
+        5 + 3 * 2 = x 
+        5 + 9 = x 
+        x = 11
+            &lt;/pre&gt;
+        &lt;/code&gt;    
+            </pre>
+        </code>
+    </p>
+    <h3><q>CITAÇÃO</q></h3>
+    <p>Como ja foi aprendido durante o curso, o HTML5 preza pelo significado das coisas, e quando utilizamos a tag "q", estamos informando para o sistema que o que está dentro da tag é a citação de alguem. Como ex: <br> Segundo o filosofo Aristóteles: <q>O prazer no trabalho aperfeiçoa a obra.</q>
+    </p>
+    <h3>TAG &lt;blockquote&gt;</h3>
+    <p>Não é muito diferente da tag "q", porem essa tag é mais completa e é muito utilizada para citações de documentos, obras, livros, passagens de site, entre outros. Pois nessa tag, você tem a opção de informar o link de origem para o sistema. Esteticamente não muda nada em seu site, mas o sistema entende que aquilo é uma citação e de onde ela vem. Basta usar a tag "blockquote" + o complemento "cite" Como ex: <br> De acordo com o site, <mark>guiadacarreira:</mark> <blockquote cite="https://www.guiadacarreira.com.br/blog/como-ser-mais-produtivo">Existe o mito de que a produtividade só é importante para quem quer trabalhar muito. Mas isso é um engano.</blockquote> </p>
+    <p>A tag vai ficar da seguinte forma: <br> 
+    <code>&lt;blockquote cite=" link "&gt;</code> citação <code> &lt;/blockquote&gt;</code></p>
+    <h3>TAG &lt;abbr&gt;</h3>
+    <p>Para finalizar.Essa tag serve para definir uma abreviação. Ex: <br> A <abbr title="Doutora">Dra.</abbr> vai atender o paciente </p>
+    <p>Se passarmos o cursor do mouse em cima da sigla "Dra." vai aparecer o nome sem abreviação </p>
+    <hr>
+    <h2>LISTAS OL E UL</h2>
+    <h3>LISTAS ORDENADAS</h3>
+    <p>Lista ordenada serve literalmente para fazer uma lista em ordem crescente, seja ela alfabetica, numerica, ou em numeros romanos. Para usa-la vamos usar duas tags. A primeira é "&lt;ol&gt;", essa tag tem a função de avisar ao sistema que estamos fazendo uma lista. Dentro da tag "&lt;ol&gt;" vamos utilizar a tag &lt;li&gt; dentro de cada item da nossa lista. Ex: <br> 
+        <ol>
+            <li>Arrumar a casa
+            <li>tomar banho
+            <li>ir pra faculdade</li>   
+
+        </ol>
+    </p>
+    <p>Dentro da tag "ol" podemos colocar o parametro <mark style="background-color: skyblue;">type</mark> para alterarmos o seu estilo de ordem, fica mais ou menos assim o comando: <strong>&lt;ol type=""&gt;</strong>. Na lista abaixo vou colocar tudo em ordem alfabetica utilizando o parametro "type" </p>
+    <ol type="A">
+        <li>Arrumar a cama</li>
+        <li>Tomar banho</li>
+        <li>Ir para faculdade</li>
+
+    </ol>
+      <p>Além dessas funções. caso você não queira que sua lista comece pelo numero 1, podemos fazer essa alteração atravez do parametro <mark style="background-color: skyblue;">start</mark> dentro tbm da tag "ol", ficando dessa forma:<strong>&lt;ol start="5"&gt;</strong>. Na lista abaixo, ela vai começar pelo número 5. Ex: </p>  
+    <ol start="5">
+        <li>Arrumar a casa</li>
+        <li>Tomar banho</li>
+        <li> Ir para faculdade</li>
+
+    </ol>
+    <h3>LISTAS NÃO ORDENADAS</h3>
+    <p>Praticamente igual as listas ordenadas, o estilo de lista "não ordenada" tem a mesma função da lista ordenada, sua unica diferença é que ela não tem ordem, não é necessario uma ordem de sequencia. Para reproduzi-la utilizamos praticamente os mesmos comandos da lista ordenada. Porem, no lugar de "ol", vamos usar a tag "ul". Acompanhe no exemplo abaixo:</p>
+    <h5>Lista de compras</h5>
+    <ul>
+        <li>Pão</li>
+        <li>Ovo</li>
+        <li>Queijo</li>
+        <li>Frutas</li>
+    </ul>
+    <h3>LISTA DE DEFINIÇÃO</h3>
+    <p>Uma lista regida pela tag &lt;dl&gt; onde você determina o termo atravez da tag &lt;dt&gt;, e a sua definição atravez da tag &lt;dd&gt; </p>
+    <dl> <!--inicio da lista-->
+        <dt>PV/P</dt> <!--item a ser definido-->
+        <dd>Relação sobre preço/valor patrimonial de uma empresa</dd><!--definição do item-->
+    </dl><!--fim da lista-->
+    <hr>
+    <h2>LINKS</h2>
+    <h3>LINKS EXTERNOS</h3>
+    <p>Para adicionarmos <em>Links</em> ao nosso site vamos utilizar a tag &lt;a&gt;. Para colocar em pratica, vou adicionar um link em seguida de um site que eu gosto muito, de um jogo de enigma chamado <a href="http://notpron.org/notpron/not/level2.htm">notpron</a></p>
+    <h4>PARAMETROS</h4>
+    <p>Existe um parametro chamado <code>(rel="nofollow")</code> que seria basicamente você avisar ao nosso amigo Google que o site/link que está sendo acessado não tem seu "aval", não é um site que você conhece. Esse parametro parece um pouco com o "external", porem tem um significado um pouco diferente</p>
+    <p>Uma dica muito importante para quando você for adicionar <strong>links <mark>externos</mark></strong> em seu site, é preciso utilizar os parametros <code>(target="_blank")</code> para abrir o link adicionado em uma nova aba. É muito importante tambem utilizar o parametro <code>(rel="external")</code> para informar ao site que o link que vai ser aberto vai para fora do seu site. No paragrafo abaixo irei adicionar um site qualquer com esses parametros.</p>
+    <p>Para acessar o site da globo, <a href="https://www.globo.com/" target="_blank" rel="external">clique em mim</a> </p>
+    <p>Se você chegou até mim utilizando o link da aula 02, <a href="a02.html" rel="prev">clique em mim</a> para voltar para lá</p>
+    <h3>LINKS INTERNOS</h3>
+    <p>Para adicionar um link interno é muito facil. Primeiro precisamos ter em mente que para isso acontecer, todas as paginas/links do nosso site precisam estar em uma unica pasta. Para dar o comando, nos vamos utilizar a mesma tag para links externos: &lt;a&gt;. Após isso, nos damos o comando <code>"ctrl + espaço"</code> no local onde seria adicionado o nosso link e selecionamos a pagina que desejamos que seja aberta. Para dar um exemplo pratico, <a href="index.html" rel="next">clique em mim</a> para acessar a pagina onde ensino a colocar links externos </p>
+    <h3>PARAMETROS</h3>
+    <p>Assim como no Links externos, nos podemos utilizar alguns parametros de valor mais semantico para guiar o Google e ajuda-lo a entender o caminho das paginas. para isso podemos utilizar dois parametros:</p>
+    <dl>
+        <dt> REL NEXT</dt>
+        <dd>Usamos essa tag para informar que o link que foi utilizado por ela, é a "proxima pagina" que queremos que o usuario acesse. Lembrando que esse parametro é de valor semantico, esteticamente não muda nada em seu site</dd>
+        <dt>REL PREV</dt>
+        <dd>Ao contrario de "next", o parametro "prev" faz referencia a "pagina anterior". Seria meio que um aviso ao Google que o link que foi utilizado com esse parametro representaria a pagina que teria que voltar apos o acesso</dd>
+    </dl>
+    <h3>LINKS PARA DOWNLOADS</h3>
+    <p>Para criar um link para download utilizamos a mesma tag de sempre: &lt;a&gt;. Uma observação importante a ser feita é que o arquivo que você quer que seja baixado tem que está tambem na mesma pasta do seu site. Assim como nos links internos e externos, os links para download tem parametros que facilitam no processo, como exemplo o parametro <code>(download="nome do arquivo que vai ser baixado")</code> pra acompanhar a linha de raciocinio, <a href="Hot Shop Online.pdf" download="Hot Shop Online.pdf">clique em mim</a> para baixar um PDF</p>
+    <!--Não vai ser posivel abrir os links nesse site, pois os os arquivos dos mesmos n estão nessa pasta-->
+   
+   
+    
+</body>
+</html>
