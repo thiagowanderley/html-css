@@ -1,4 +1,7 @@
 @charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&display=swap');
+
+
 
 * {
     margin: 0px;
@@ -40,6 +43,8 @@ section {
     padding-bottom: 10vh;
     line-height: 2em;
     padding-left: 20px;
+    font-family: 'Kalam', cursive;
+    font-size: 1.3em; 
 }
 
 section.normal {
@@ -54,7 +59,8 @@ section.imagem {
 
 section.imagem > p {
     background-color: rgba(0, 0, 0, 0.29);
-    width: 300px;
+    display: inline-block;
+    padding: 5px;
 }
 
 footer {
