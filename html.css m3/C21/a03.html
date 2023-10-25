@@ -10,6 +10,12 @@
         }
         table {
             border-collapse:collapse;
+            display: inline-block;
+            align-items: center;
+        }
+
+        tfoot {
+            border: none;
         }
 
         thead, tfoot {
@@ -18,12 +24,17 @@
         }
 
         tbody {
-            text-align: left;
+            text-align: center;
+            background-color: lightgray;
         }
 
         th, td {
             border: 3px solid black;
             padding: 5px;
+        }
+
+        td.nome {
+            text-align: left;
         }
 
 
@@ -58,12 +69,68 @@
         </thead>
         <tbody>
             <tr>
-                <td>MR MOTORS COMERCIO DE VEICULOS LTDA</td>
+                <td class="nome">MR MOTORS COMERCIO DE VEICULOS LTDA</td>
                 <td>630</td>
                 <td>25/10/2023</td>
                 <td>ADM</td>
                 <td>PEC DE PEÇAS</td>
                 <td>R$ 2.350,58</td>
+            </tr>
+            <tr>
+                <td class="nome">TV SUBAE LTDA</td>
+                <td>23056</td>
+                <td>25/10/2023</td>
+                <td>NOVOS</td>
+                <td>PUBLICIDADE E PROPAGANDA</td>
+                <td>R$1.500,00</td>
+            </tr>
+            <tr>
+                <td class="nome">CEDEP COM E INDUSTRIAS LTDA</td>
+                <td>158153</td>
+                <td>04/10/2023</td>
+                <td>POS VENDA</td>
+                <td>COMPRA DE OLEO</td>
+                <td>R$210,00</td>
+            </tr>
+            <tr>
+                <td class="nome">LIGAMIDIA CONCEITO DIGITAL E C</td>
+                <td>3895</td>
+                <td>05/10/2023</td>
+                <td>NOVOS</td>
+                <td>PUBLICIDADE E PROPAGANDA / SITE</td>
+                <td>R$532,00</td>
+            </tr>
+            <tr>
+                <td class="nome">UNIVERSO ONLINE S A</td>
+                <td>5102023</td>
+                <td>09/10/2023</td>
+                <td>ADM</td>
+                <td>EMAIL PROFISSIONAL</td>
+                <td>R$43,89</td>
+            </tr>
+            <tr>
+                <td class="nome">CLARO NXT TELECOMUNICAÇÃO</td>
+                <td>202309</td>
+                <td>10/10/2023</td>
+                <td>ADM</td>
+                <td>INTERNET</td>
+                <td>R$135,49</td>
+            </tr>
+            <tr>
+                <td class="nome">OMURA COMERCIO DE VEICULOS LTDA</td>
+                <td>6395</td>
+                <td>16/10/2023</td>
+                <td>POS VENDA</td>
+                <td>COMPRA DE PEÇAS</td>
+                <td>R$1.503,69</td>
+            </tr>
+            <tr>
+                <td class="nome">HPE AUTOMOTORES DO BRASIL LTDA</td>
+                <td>X</td>
+                <td>17/10/2023</td>
+                <td>POS VENDA</td>
+                <td>PEC PEÇAS</td>
+                <td>R$2.352,82</td>
             </tr>
         </tbody>
         <tfoot>
@@ -72,8 +139,8 @@
                 <td></td>
                 <td></td>
                 <td></td>
-                <td><strong>VALOR TOTAL</strong></td>
                 <td></td>
+                <td style="text-align: right;"><strong>VALOR TOTAL:</strong></td>
             </tr>
         </tfoot>
     </table>
