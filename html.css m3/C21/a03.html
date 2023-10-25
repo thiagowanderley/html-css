@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas Grandes</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        table {
+            border-collapse:collapse;
+        }
+
+        thead, tfoot {
+            background-color: #daa5207d;
+            text-align: center;
+        }
+
+        tbody {
+            text-align: left;
+        }
+
+        th, td {
+            border: 3px solid black;
+            padding: 5px;
+        }
+
+
+
+    </style>
+</head>
+<body>
+    <h1> Aprendendo a criar tabelas Grandes </h1>
+    <!--
+        ANATOMIA DE TABELAS:
+
+        TABLE
+
+        THEAD
+            TR, TD, TH > USAR O TH
+        TBODY
+            TR, TD, TH
+        TFOOT
+            TR, TD, TH
+    -->
+
+    <table>
+        <thead>
+            <tr>
+                <th>Nome</th>
+                <th>Titulo</th>
+                <th>Data de pagamento</th>
+                <th>Departamento</th>
+                <th>Descrição de pagamento</th>
+                <th>Valor</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>MR MOTORS COMERCIO DE VEICULOS LTDA</td>
+                <td>630</td>
+                <td>25/10/2023</td>
+                <td>ADM</td>
+                <td>PEC DE PEÇAS</td>
+                <td>R$ 2.350,58</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>valor Total</td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>
