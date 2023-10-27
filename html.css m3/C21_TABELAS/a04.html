@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mesclagem de Células</title>
+    <style>
+        table {
+            border-collapse: collapse;
+        }
+
+        td  {
+            border: 2px solid black;
+            padding: 3px;
+            width: 30px;
+            height: 30px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- 
+        COLSPAN -- Oculpa coluna
+        ROWSPAN -- Oculpa linha
+    -->
+    <h1> Mesclagem de Células</h1>
+    <table>
+        <tr>
+            <td rowspan="3">1</td> <!--Mesclagem de célula, onde o numero "1" vai ocupar o espaco de três LINHAS-->
+            <td>2</td>
+            <td>3</td>
+        </tr>
+        <tr>
+            
+            <td colspan="2">5</td> <!--Mesclagem de célula, onde o numero "5" vai ocupar o espaco de duas COLUNAS-->
+            
+        </tr>
+        <tr>
+            
+            <td>8</td>
+            <td>9</td>
+        </tr>
+    </table>
+</body>
+</html>
