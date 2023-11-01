@@ -4,13 +4,40 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>iframes</title>
+    <style>
+        /*
+        Tamanho padrão do iframe: 
+        w --> 300px
+        h --> 150px
+        */
+
+        iframe {
+            width: 35vw;
+            height: 300px;
+        }
+
+        body {
+            background: blueviolet;
+        }
+    </style>
 </head>
 <body>
     <h1>Criando iframes</h1>
     <p>
         acessando o site do curso em video 
-        <iframe src="https://www.cursoemvideo.com/" frameborder="1"></iframe>
+        <iframe src="https://www.cursoemvideo.com/" frameborder="1" height="300px" width="35vw">
+            <a href="https://www.cursoemvideo.com/">curso em video</a> 
+        <!-- 
+            -- Caso o navegador não seja compativel com iframe, vai ser adicionado um link com o endereço do site em questão
+
+            -- Podemos fazer configurações basicas como alterar altura e largura em linha
+        -->
+        </iframe>
         para aprender a programar
+    </p>
+    <p>
+        O meu repositorio é muito legal
+        <iframe src="https://github.com/thiagowanderley" frameborder="1"></iframe>
     </p>
 </body>
 </html>
