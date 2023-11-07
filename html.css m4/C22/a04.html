@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iframes</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            background-color: wheat;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        iframe {
+            width: 95vw;
+            display: block;
+            margin: auto;
+            height: 400px;
+            border: none;
+        }
+
+        ul {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            list-style: none;
+        }
+        li {
+           background-color: darkkhaki;
+            width: 30vw;
+            text-align: center;
+            padding: 5px;
+            border-radius: 5px;
+        }
+        
+        a {
+            text-decoration: none;
+            color: white;
+        }
+
+        a:hover {
+            color: black;
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <h1>Navegando atraves de iFrames</h1>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Autem minima sapiente dolor aperiam quas, soluta vel voluptate aliquam. Voluptas, quasi perspiciatis eius porro inventore architecto. A voluptatibus tenetur nesciunt doloribus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis quod deserunt, voluptatibus officia vel totam? Tenetur minima reiciendis corporis exercitationem dolorum, quisquam deserunt iure voluptatem deleniti a quos quae dolore.</p>
+    
+    <ul>
+        <li><a href="pasta-teste/teste01.html" target="frame">Pagina 01</a></li>
+        <li><a href="pasta-teste/teste02.html" target="frame">Pagina 02</a></li>
+        <li><a href="a03.html" target="frame">Pagina 03</a></li>
+    </ul>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloribus nostrum adipisci maiores, dolorum ad quasi illum sed ducimus harum provident corporis, voluptate dignissimos deserunt quae a. Officiis dolorem reiciendis unde. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae mollitia error natus, optio minima, pariatur blanditiis fuga quam dolorem, ab eaque rerum. Ad, numquam. Possimus odio tempore necessitatibus perspiciatis doloribus.</p>
+    <!--
+         Nesse exercicio tem um ponto importante que é a definição de um "NAME" ao iframe que vai ser usado anteriomente nos links (a) com o uso de um "TARGET". Onde vamos fazer com que o link selecionado por quem estiver navegando no site no frame que estara disponivel posteriomente
+
+         Observe que:
+         o "TARGET" do link a cima corresponde ao "NAME" do iframe abaixo
+    -->
+    <iframe src="pasta-teste/capa.html" name="frame">
+
+        <!-- 
+            Existe um parametro para o iframe chamado SRCDOC, onde podemos fazer um cartão de visitas com instruções na pagina inicial utilizando de configurações em HTML e CSS basico, como ex: adicionar titulos, paragrafos e ate imagens
+         -->
+
+    </iframe>
+
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Id, voluptate omnis quas doloremque sequi delectus cumque expedita facere autem odit quia nisi saepe aut. Distinctio atque minus eaque eos? Quo. Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident, facilis perspiciatis. Eligendi labore amet ipsam, cum corporis dolorem laudantium officia in voluptatum, voluptates perspiciatis doloremque nisi suscipit libero at id?</p>
+</body>
+</html>
