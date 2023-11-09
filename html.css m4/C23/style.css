@@ -11,17 +11,50 @@ html, body {
     background-color: black;
 }
 
+body {
+    background: url(imagens/fundo-madeira.jpg) no-repeat top center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
 main {
-    position: relative;
+    position: relative; /* Centralizar div */
     height: 100vh;
 }
 
 section#tel {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 311px;
-    height: 627px;
-    background: url(imagens/frame-iphone.png) no-repeat;
+    position: absolute; /* centralizar div */
+    top: 50%; /* Centralizar div */
+    left: 50%; /* Centralizar div */
+    transform: translate(-50%, -50%); /* Centralizar div */
+    width: 200px;
+    height: 408px;
+    background: url(imagens/frame-iphone-200.png) no-repeat;
+}
+
+iframe#tela {
+    position: relative;
+    top: 52px;
+    left: 15px;
+    width: 171px;
+    height: 302px;
+    border: none;
+}
+
+#redes {
+    text-align: right;
+}
+
+section#redes img {
+    width: 50px;
+    margin: 10px;
+    border-radius: 50%;
+    box-shadow: 2px 2px 2px #00000087;
+    
+}
+
+section#redes img:hover {
+    transform: translate(-3px, -3px);
+    box-shadow: 4px 4px 2px #00000087; /* Animacão nos botões */
+    transition: .2s;
 }
