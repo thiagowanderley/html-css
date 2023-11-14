@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios</title>
+    <style>
+        * {
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+
+        body {
+            background-color: azure;
+        }
+
+       
+    </style>
+</head>
+<body>
+    <fieldset> <!-- FIELDSET -->
+        <legend>Formulario</legend> <!-- LEGEND -->
+        <form action="" method="post">
+            <abbr title="Colocar número com o DDD e '9' antes do numero ">
+                <p>
+                    <label for="tel">Telefone</label>
+                    <input type="tel" name="tel" id="tel" required min="11" placeholder="(DDD) 9 XXXX-XXXX" pattern="^\(d{2}\)\d{4,5}-\d{4}$"> <!-- PATTERN -->
+                </p>
+            </abbr>
+            <p>
+                <label for="mail">E-Mail</label>
+                <input type="email" name="mail" id="mail" autocomplete="email">
+            </p>
+
+            <input type="submit" value="Enviar">
+        </form>
+    </fieldset>
+
+    <!-- 
+        Tag FIELDSET:
+        Caixa visual utilizada para agrupar dados de uma determinada area
+        
+        Tag LEGEND:
+        Titulo / Legenda para nomear a caixa formada pela tag FIELDSET
+
+        Parametro PATTERN:
+        Esse parametro serve para determinar um formato / padrão. Nesse caso foi utlilizado para determinar o padrão do numero de telefone. Onde so vai ser aceito pelo programa o formato exigido
+        
+        !! ESTUDAR DEPOIS SOBRE RegEx !!
+     -->
+</body>
+</html>
