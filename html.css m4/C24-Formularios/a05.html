@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios Number</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+
+        body {
+            background-color: coral;
+            width: 100vw;
+            height: 100vh;
+            position: relative;
+        }
+
+        form {
+            position: absolute;
+            display: flex;
+            flex-direction: column;
+            width: 40vw;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            background-color: whitesmoke;
+            padding: 10px;
+            border-radius: 6px;
+            box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.468);
+        }
+
+        input, label {
+            margin: 5px;
+        }
+
+        input {
+            border: none;
+            height: 30px;
+        }
+
+        .botao {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+        }
+
+        .acao {
+            width: 50%;
+            border: none;
+            background-color: cadetblue;
+            padding: 5px;
+            border-radius: 5px;
+        }
+
+    </style>
+</head>
+<body>
+        <h1> Cadastro de Aluno</h1>
+        <form action="" method="get">
+            <label for="nome">Nome</label>
+            <input type="text" name="nome" id="nome" required placeholder="Nome Completo">
+
+            <label for="nascimento">Data de Nascimento</label>
+            <input type="date" name="nascimento" id="nascimento" required>
+
+            <label for="media">Media</label>
+            <input type="number" name="media" id="media" min="0" max="10" placeholder="0 a 10" step="0.1"> 
+            <!-- STEP / MIN,MAX -->
+
+            <label for="mes">Data da Nota</label>
+            <input type="month" name="mes" id="mes">
+
+            <label for="procurar">Pesquisar</label>
+            <input type="search" name="procurar" id="procurar" placeholder="Pesquisar">
+
+            <div class="botao">
+                <input class="acao" type="submit" value="Enviar">
+                <input class="acao" type="reset" value="Limpar">
+            </div>
+        </form>
+
+        <!-- 
+            Parametro STEP:
+            Serve para denominar de quanto em quanto vai ser somado o que foi requisitado
+            
+            Parametro MIN/MAX:
+            Denomina a quantidade Maxima e Minima de numeros que vao ser permitidos 
+         -->
+</body>
+</html>
