@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios</title>
+    <style>
+        form {
+            display: flex;
+            flex-direction: column;
+            width: 20vw;
+        }
+    </style>
+</head>
+<body>
+    <form method="post" action="cadastro.php">
+        <label for="email">E-mail</label>
+        <input type="email" name="email" id="email" required size="15" placeholder="E-mail"> 
+        <!-- REQUIRED / SIZE / PLACEHOLDER -->
+
+        <label for="senha">Senha</label>
+        <input type="password" name="senha" id="senha" required minlength="8">
+         <!-- REQUIRED / MINLENGTH -->
+
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Apagar"> 
+        <!-- RESET -->
+
+
+        <!-- 
+            Inputs de TYPE = RESET, apaga tudo o que foi colocado e renicia o processo
+
+            Parametro REQUIRED obriga o usuario a preencher as caixas de texto onde os mesmos estão ativos
+
+            Parametro MINLENGTH exige uma quantidade minima de caracteres na caixa de texto (input) em questão
+
+            Parametro SIZE denomina a quantidade de caracteres que vai caber em uma caixa de texto (quantidade visivel)
+
+            Parametro PLACEHOLDER coloca uma mensagem/dica/informacão de ajuda informando o que vai ser pedido na caixa de texto
+        -->
+    </form>
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios</title>
+    <style>
+        form {
+            display: flex;
+            flex-direction: column;
+            width: 20vw;
+        }
+
+        input {
+            margin: 2px;
+        }
+    </style>
+</head>
+<body>
+   <form action="cadastro.php" method="post" autocomplete="off">
+    <!-- 
+        Parametro -> ACTION:
+        Pasta pra onde será enviado os dados apos apertarmos o botão do SUBMIT apos preencher os dados
+
+        Parametro -> METHOD:
+        O GET (padrão), é o método que coloca os dados do formulário na URL.
+
+        O método POST não deixa aparecer os dados digitados na URL e é o mais seguro, é recomendado quando para dados sensiveis. como senhas, números de cartão, entre outrs...
+
+     -->
+    
+            <label for="nome">Nome:</label>
+            <input type="text" name="nome" id="nome"> 
+            <!-- 
+                NAME:
+                Mais utilizado em HTML e PHP
+
+                ID:
+                Mais utilizado em JS
+            -->
+   
+      
+            <label for="sobrenome">Sobrenome:</label>
+            <!-- 
+                Na tag LABEL, vai ser preenchido o parametro FOR com o ID da tag INPUT, ele vai servir para informar e relacionar ao usuario o que é pra ser escrito na caixa de texto
+             -->
+            <input type="text" name="sobrenome" id="sobrenome">
+        
+      
+            <input type="submit" value="Enviar">
+       
+   </form>
+</body>
+</html>
