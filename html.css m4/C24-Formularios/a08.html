@@ -6,14 +6,16 @@
     <title>Formularios</title>
 </head>
 <body>
-    <form action="">
+    <form action="" aria-required="true"> <!-- ARIA-REQUIRED -->
         <fieldset> <!-- RADIO -->
             <legend>Sexo</legend>
 
             <label for="masculino">Masculino</label>
-            <input type="radio" name="sexo" id="masculino"> <br>
+            <input type="radio" name="sexo" value="M" id="masculino" required> <br>
             <label for="feminino">Feminino</label>
-            <input type="radio" name="sexo" id="feminino"> <br>
+            <input type="radio" name="sexo" value="F" id="feminino"> <br>
+            <label for="indefinido">Indefinido</label>
+            <input type="radio" name="sexo" value="IN" id="ind">
         </fieldset>
 
         <fieldset> <!-- CHECKBOX -->
@@ -33,12 +35,22 @@
 
         </fieldset>
             <input type="reset" value="Limpar">
+            <input type="submit" value="Enviar">
     </form>
+   
 
     <!-- 
+        Parametro ARIA-REQUIRED:
+        -- Parametro usado na tag FORM
+        -- Serve para definir uma obrigação ao usuario para marcar a are em questão
+
         RADIO:
+        -- Utilizado quando queremos que seja marcado apenas um elemento
+        -- Temos que lembrar de definir um VALUE pra cada input
+        -- SEMPRE colocar o NAME de todos intens iguais
 
         CHECKBOX:
+        -- Podemos utilizar esse input quando queremos que o usuario marque uma ou mais alternativa
         
      -->
 </body>

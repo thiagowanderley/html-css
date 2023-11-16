@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios</title>
+</head>
+<body>
+    <form action="">
+        <form action="" method="get"> <!-- COLOR -->
+            <fieldset>
+                <p>Selecione uma cor</p>
+                <legend>Selecione uma cor</legend>
+                <label for="cor">Cor</label>
+                <input type="color" name="cor" id="cor">
+            </fieldset>
+        </form>
+        <form action=""> <!-- RANGE -->
+            <fieldset>
+                <legend>Metodo Range</legend>
+                <label for="range">Selecione de 0 a 5</label>
+                <input type="range" name="range" id="range" min="1" max="5">
+            </fieldset>
+        </form>
+        <form action="" method="post"> <!-- FILE -->
+                <fieldset>
+                    <legend>Arquivos</legend>
+                    <label for="arq">Selecione um Arquivo</label>
+                    <input type="file" name="arq" id="arq">
+                </fieldset>
+        </form>
+        <input type="submit" value="Enviar">
+    </form>
+    <!-- 
+        COLOR:
+        -- Esse INPUT serve literalmente para o usuario escolher uma cor
+
+        RANGE: 
+        -- Pode ser utilizado para determinar um grau de satisfação, podemos usar o parametro MAX e MIN para determinar de onde começa e onde termina. 
+        -- Esse input tem um visual grafico de barra 
+
+        FILE: 
+        -- Esse input é muito utilizado pois com ele o usuario consegue descarregar um arquivo de foto
+        -- IMPORTANTE: É obrigatorio que o FORM tenha o METHDD = POST, pois já foi dado em outras aulas que quando queremos descarregar um arquivo de tamanho muito grande o METHOD precisa ser igual a POST
+     -->
+</body>
+</html>
