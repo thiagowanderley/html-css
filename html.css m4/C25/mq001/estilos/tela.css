@@ -1,0 +1,38 @@
+@charset "UTF-8";
+
+/* TELA PARA LEITURA */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    text-align: center;
+}
+
+ul {
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+}
+
+main {
+    padding: 5px;
+}
+
+main p {
+    text-align: justify;
+}
+
+h2 {
+    text-align: center;
+}
+
+main {
+    width: 600px;
+    min-width: 300px;
+    max-width: 600px;
+    margin: auto;
+    
+}
