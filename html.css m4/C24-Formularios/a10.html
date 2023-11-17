@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios</title>
+</head>
+<body>
+    <form action="" method="post">
+        <label for="mapa">Selecione</label>
+        <select name="mapa" id="mapa"> <!-- SELECT + OPTION -->
+                <optgroup label="Estados"> <!-- OPTGROUP -->
+                    <option value="BA">Bahia</option>
+                    <option value="MA">Maranhão</option>
+                    <option value="RJ">Rio de Janeiro</option>
+                    <option value="SP">São Paulo</option>
+                </optgroup>
+                <optgroup label="pais">
+                    <option value="BR">Brasil</option>
+                    <option value="EUA">Estados Unidos</option>
+                </optgroup> <br>
+        </select>
+        <label for="msg">Digite uma mensagem se quiser</label> <br>
+        <textarea name="msg" id="msg" cols="30" rows="10" maxlength="100"></textarea> <!-- TEXTAREA -->
+    </form>
+    <!-- 
+        SELECT + OPTION:
+        Serve para fazer um "banco de dados" onde atravez das tags OPTIONS nos vamos colocar as opcões que queremos, como exemplo acima que englobamos as tags OPTIONS dentro de um SELECT de id = mapa e demos algumas opcões de lugares
+
+        OPTGROUP: 
+        Serve basicamente para organizar nossas options em grupos, no exemplo acima denominei o SELECT de "mapa" e dentro de duas OPTGROUPS organizei os options estados e paises
+        --ATENCÃO-- -> É necessario colocar um LABEL nas OPTGROUPS
+
+        TEXTAREA:
+        Como ja diz o nome, o TEXTAREA serve para criar uma area onde o usuario podera escrever qualquer mensagem / comentario livremente. Atravez de alguns parametros podemos restringir algumas coisas. Como exemplo do maxlength
+     -->
+
+
+</body>
+</html>
