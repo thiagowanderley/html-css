@@ -1,0 +1,18 @@
+@charset "UTF-8";
+
+
+
+img {
+    display: none;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+}
+
+li {
+    width: 20vw;
+    border-bottom: none;
+}
