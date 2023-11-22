@@ -1,5 +1,6 @@
 @charset "UTF-8";
 
+
 ::-webkit-scrollbar {
     width: 0;
     height: 0;
@@ -20,17 +21,27 @@ body {
 header {
     background-color: #9B9A99;
     width: 100vw;
-    height: 15vh;
+    height: 17vh;
     text-align: center;
+    position: relative;
 }
 
 header > h1 {
     padding: 15px;
 }
 
+span {
+    position: absolute;
+    display: flex;
+    justify-content: left;
+    background-color: #9B9A99;
+    cursor: pointer;
+}
+
 nav {
     background-color: #9B9A99;
     width: 100vw;
+    display: none;
 }
 
 nav > ul {
