@@ -23,6 +23,7 @@ header h1 {
 header nav {
     background-color: #e3dc81;
     text-align: center;
+    display: none;
 }
 
 header li {
@@ -33,6 +34,17 @@ header li {
 header li:hover {
     background-color: whitesmoke;
     cursor: pointer;
+}
+
+header img {
+    padding: 2px;
+    margin-left: 5px;
+    cursor: pointer;
+}
+
+header img:hover {
+    border-radius: 5px;
+    box-shadow: -2px 2px 4px #0000007c;
 }
 
 

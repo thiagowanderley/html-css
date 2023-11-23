@@ -4,6 +4,10 @@ img {
     display: none;
 }
 
+header nav {
+    display: block;
+}
+
 ul {
     list-style: none;
     display: flex;
@@ -13,4 +17,8 @@ ul {
 li {
     width: 20vw;
     border-bottom: none;
+}
+
+main article {
+    width: 60vw;
 }

@@ -12,8 +12,10 @@
 <body>
     <header>
         <h1>Meu site</h1>
-        <img src="imagens/menu_FILL0_wght400_GRAD0_opsz24.png" alt="menu">
-        <nav>
+
+        <img id="burguer" src="imagens/menu_FILL0_wght400_GRAD0_opsz24.png" alt="menu" onclick="clickMenu()">
+
+        <nav id="itens">
             <ul>
                 <li> Opção 1</li>                
                 <li> Opção 2</li>
@@ -33,5 +35,15 @@
             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quaerat architecto consequatur similique voluptas reprehenderit nihil laboriosam expedita debitis officiis molestiae cupiditate fugiat, vero earum quasi maiores facere atque soluta ipsa. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eveniet ducimus a mollitia ipsum officiis, reprehenderit vel tempore in, iste dicta debitis. Mollitia magnam dicta enim alias, quaerat reprehenderit voluptatibus soluta. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Error eos, esse ipsum perferendis aliquam, maxime temporibus molestias ipsa accusantium dolorum illo unde nam minus impedit, praesentium tempora omnis provident repellendus.</p>
         </article>
     </main>
+        <!-- Script para aparecer menu -->
+    <script>
+        function clickMenu() {
+            if (itens.style.display == 'block') {
+                itens.style.display = 'none'              
+            } else {
+                itens.style.display = 'block'
+            }
+        }
+    </script>
 </body>
 </html>
