@@ -21,7 +21,20 @@
                 <p>Seja bem-vindo(a) novamente. Faça login para cessar sua conta e fazer as configurações no seu ambiente.</p>
 
                 <form action="" method="post">
-                    <label for="mail"></label>
+                    <div class="campo">
+                        <img src="imagens/mail.png" alt="imagem_mail">
+                        <input type="email" name="login" id="ilogin" placeholder="Seu e-mail" autocomplete="email" required>
+                        <label for="ilogin">Login</label>
+                    </div>
+
+                    <div class="campo">
+                        <img src="imagens/senha.png" alt="imagem_senha">
+                        <input type="password" name="senha" id="isenha" placeholder="Sua senha" required autocomplete="current-password">
+                        <label for="isenha">Senha</label>
+                    </div>
+
+                    <input type="submit" value="Entrar">
+                    <input type="button" value="Esqueci a senha">
                 </form>
             </div>
         </section>
